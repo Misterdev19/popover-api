@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button popovertarget="myModal" class="btn-gomodal">Go modal</button>
+    <div class="modal" id="myModal" popover="manual">
+        <div class="header">
+            <h1>My Modal</h1>
+            <button popover-action="hide" popovertarget="myModal">x</button>
+        </div>
+        <div class="body">
+            <h1>Hello World</h1>
+        </div>
+        <div class="footer">
+            <button popover-action="hide" popovertarget="myModal">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>

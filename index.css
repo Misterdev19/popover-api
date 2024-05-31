@@ -1,0 +1,76 @@
+
+.btn-gomodal{
+     padding: 10px 20px;
+     background-color: blue;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     transition: 0.5s ALL ease ;
+}
+.btn-gomodal:hover{
+     background-color: white;
+     color: blue;
+     border-radius: 5px;
+     border: 1px solid blue;
+}
+.modal{
+     width: 50dvw;
+     border: 1px solid black;
+     background: white;
+     padding: 10px;
+     border-radius: 5px;
+     transition: translate 0.5s ease-in-out , display 0.5s ease-in-out allow-discrete;
+     translate: 0 -100dvh;
+}
+.modal .header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+     height: 50px;
+}
+.modal .header h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.modal .header button{
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none ;
+    border-radius: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal .body{
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.modal .footer{
+    padding: 10px;
+    height: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+}
+.modal .footer button{
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+}
+
+.modal:popover-open{
+    translate: 0 -20dvh;
+}
+.modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@starting-style{
+    .modal:popover-open{
+        translate: 0 -20dvh;
+    }
+}
